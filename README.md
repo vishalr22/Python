@@ -40,10 +40,15 @@ Eg: import pandas
 # Python Comments
 A comment is a part of the coding file that the programmer does not want to execute, rather the programmer uses it to either explain a block of code or to avoid the execution of a specific part of code while testing.
 
-- Single-Line Comments:  To write a comment just add a ‘#’ at the start of the line. Eg: <b># Comment Statement</b>
+- Single-Line Comments:  To write a comment just add a ‘#’ at the start of the line.
+
+Eg: <b># Comment Statement</b>
+
 - Multi-Line Comments: To write multi-line comments you can use multiline string at each line or you can use the multiline string.
+
 Eg: <b>'''Comment Statement'''</b>
 
 # Escape Sequence Characters
 An escape sequence character is a backslash \ followed by the character you want to insert.
+
 Eg: <b>print("This will print \n execute after new line")</b>
