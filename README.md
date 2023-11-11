@@ -29,7 +29,7 @@ Module is like a code library having the required packages related to that modul
 It can be used as a package manager pip to install a python module.
 - pip/pip3 install <module_name>
 
-Eg: pip install pandas or <b>pip3 install sklearn</b>
+Eg: <b>pip install pandas</b> or <b>pip3 install sklearn</b>
 
 # import syntax
 Import syntax is used to import a module in Python
