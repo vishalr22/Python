@@ -46,4 +46,4 @@ A comment is a part of the coding file that the programmer does not want to exec
 # Escape Sequence Characters
 An escape sequence character is a backslash \ followed by the character you want to insert.
 
-Eg: print("This will \" execute")
+Eg: print("This will <b>\</b>" execute")
