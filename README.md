@@ -1,4 +1,4 @@
-This Repo Covers Python from Basic to Advanced Level.
+# This Repo Covers Python from Basic to Advanced Level.
 
 # Python
 - Python is a dynamically typed, general purpose programming language that supports an object-oriented programming approach as well as a functional programming approach.
