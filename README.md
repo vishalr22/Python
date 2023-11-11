@@ -19,3 +19,18 @@
 - It is used to create web applications.
 - It can be used to handle databases.
 - It is used in business and accounting to perform complex mathematical operations along with quantitative and qualitative analysis.
+
+# Modules in Python
+Module is like a code library having the required packages related to that module by somebody else in our python program. There are two types of modules in python:
+- Built in Modules - These modules are ready to import and use and ships with the python interpreter. there is no need to install such modules explicitly.
+- External Modules - These modules are imported from a third party file or can be installed using a package manager like pip or conda. Since this code is written by someone else, we can install different versions of a same module with time.
+
+# pip command
+It can be used as a package manager pip to install a python module.
+- pip install <module_name>
+  Eg: pip install pandas
+
+# import syntax
+Import syntax is used to import a module in Python
+- import <module_name>
+  Eg: import pandas
