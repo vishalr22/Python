@@ -44,4 +44,6 @@ A comment is a part of the coding file that the programmer does not want to exec
 - Multi-Line Comments: To write multi-line comments you can use multiline string at each line or you can use the multiline string. Eg: '''Comment Statement'''
 
 # Escape Sequence Characters
-An escape sequence character is a backslash \ followed by the character you want to insert. \nEg: print("This will \" execute")
+An escape sequence character is a backslash \ followed by the character you want to insert.
+
+Eg: print("This will \" execute")
