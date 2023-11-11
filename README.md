@@ -28,9 +28,11 @@ Module is like a code library having the required packages related to that modul
 # pip command
 It can be used as a package manager pip to install a python module.
 - pip install <module_name>
+
 Eg: pip install pandas
 
 # import syntax
 Import syntax is used to import a module in Python
 -  import <module_name>
+
 Eg: import pandas
