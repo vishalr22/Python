@@ -32,5 +32,5 @@ Eg: pip install pandas
 
 # import syntax
 Import syntax is used to import a module in Python
-- import <module_name>
+-  import <module_name>
 Eg: import pandas
