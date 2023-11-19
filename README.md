@@ -56,4 +56,4 @@ PEP stands for Python Enhancement Proposal. A PEP is a document that describes n
 
 Zen of Python - Guiding principles for Python’s design. 
 
-- import this
+- Command to check: <b>import this</b>
