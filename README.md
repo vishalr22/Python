@@ -47,3 +47,14 @@ A comment is a part of the coding file that the programmer does not want to exec
 An escape sequence character is a backslash \ followed by the character you want to insert.
 
 Eg: <b>print("This will print \n execute after new line")</b>
+
+# PEP 8
+PEP 8 is a document that provides guidelines and best practices on how to write Python code.
+The primary focus of PEP 8 is to improve the readability and consistency of Python code.
+
+PEP stands for Python Enhancement Proposal. A PEP is a document that describes new features proposed for Python and documents aspects of Python, like design and style, for the community.
+
+Zen of Python - Guiding principles for Python’s design. 
+
+Easter egg
+- import this
