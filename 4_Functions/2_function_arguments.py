@@ -52,6 +52,11 @@ def name(**name):
 name(mname="Buchanan", lname="Quill", fname="James")
 
 
+def variableLength(*args, **dict_new):
+    print("hello", dict_new['name'], "from", dict_new['place'])
+    print(f"This is {args[0]} {args[1]} ")
+
+variableLength('hari', 'priya', name = 'vishal',place = 'bangalore')
 
 
 '''
