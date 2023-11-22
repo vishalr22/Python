@@ -1,0 +1,17 @@
+# Create a virtual environment
+python -m venv myenv
+
+# Activate the virtual environment (Linux/macOS)
+source myenv/bin/activate
+
+# Activate the virtual environment (Windows)
+myenv\Scripts\activate.bat
+
+# Activate the virtual environment if using powershell (Windows)
+myenv\Scripts\activate.ps1
+
+# Output the list of installed packages and their versions to a file
+pip freeze > requirements.txt
+
+# Install the packages listed in the requirements.txt file
+pip install -r requirements.txt
