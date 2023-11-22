@@ -31,3 +31,13 @@ if m > 0:
         print("Less than 15")
 else:
     print("Less or equal to than zero")
+
+
+# Short Hand If-else (If ... Else in One Line) can be used when the condition being tested is simple and the code blocks to be executed are short. 
+a = 330000
+b = 3303
+print("A") if a > b else print("=") if a == b else print("B")
+
+# result = value_if_true if condition else value_if_false
+c = 9 if a > b else 0
+print(c)
