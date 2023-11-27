@@ -8,7 +8,6 @@ When the script is imported as a module into another script, the __name__ variab
 def main():
     print("Running script directly from this same script")
 
-
 print(__name__)
 
 if __name__ == "__main__":
@@ -20,5 +19,5 @@ but you only want it to run when the script is run directly and not when it's im
 '''
 # # This is another script: script2.py
 # import script
-# print(__name__)   # Here if we run this script then __name__ value will be "script2"
-# script.main()     # It will call the main function from script.py and run the code mentioned inside the function.
+# print(__name__)   # Here if we run this script then "print(__name__) will print "script2"
+# script.main()     # It will call the main function from script.py
