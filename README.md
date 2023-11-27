@@ -39,7 +39,7 @@ Once a module is imported, you can use any of the functions and variables define
 - import math <br> result = math.sqrt(9)
 
 To import specific functions or variables from a module we use the from keyword. 
-from math import sqrt <br> result = sqrt(9)
+ - from math import sqrt <br> result = sqrt(9)
 
 You can also import multiple functions or variables at once by separating them with a comma:
 - from math import sqrt, pi
@@ -50,7 +50,7 @@ Importing everything: To import all functions and variables from a module we use
 Python also allows you to rename imported modules using the as keyword.
 - import math as m <br> result = m.sqrt(9)
 
-The <b>dir</b> function: Python has a built-in function called dir that you can use to view the names of all the functions and variables defined in a module.
+<b>dir</b> function: Python has a built-in function called dir that you can use to view the names of all the functions and variables defined in a module.
 - import math <br> print(dir(math))
 
 # Python Comments
