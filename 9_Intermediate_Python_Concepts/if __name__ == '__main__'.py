@@ -8,6 +8,7 @@ When the script is imported as a module into another script, the __name__ variab
 def main():
     print("Running script directly from this same script")
 
+
 print(__name__)
 
 if __name__ == "__main__":
@@ -17,7 +18,7 @@ if __name__ == "__main__":
 This is useful if you have code that you want to reuse in multiple scripts,
 but you only want it to run when the script is run directly and not when it's imported as a module.
 '''
-# This is another script
+# # This is another script: script2.py
 # import script
-# print(__name__)
-# script.main()
+# print(__name__)   # Here if we run this script then __name__ value will be "script2"
+# script.main()     # It will call the main function from script.py and run the code mentioned inside the function.
