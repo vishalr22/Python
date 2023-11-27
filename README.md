@@ -32,10 +32,30 @@ It can be used as a package manager pip to install a python module.
 Eg: <b>pip install pandas</b> or <b>pip3 install sklearn</b>
 
 # import syntax
-Import syntax is used to import a module in Python
+Import syntax is used to import a module in Python. This allows you to use the functions and variables defined in the module in your current script, as well as any additional modules that the imported module may depend on. 
 -  import <module_name>
 
-Eg: import pandas
+Once a module is imported, you can use any of the functions and variables defined in the module by using the dot notation.
+- import math
+  result = math.sqrt(9)
+
+To import specific functions or variables from a module we use the from keyword. 
+- from math import sqrt
+  result = sqrt(9)
+
+You can also import multiple functions or variables at once by separating them with a comma:
+- from math import sqrt, pi
+
+Importing everything: To import all functions and variables from a module we use the * wildcard.
+- from math import *
+
+Python also allows you to rename imported modules using the as keyword.
+- import math as m
+  result = m.sqrt(9)
+
+The <b>dir</b> function: Python has a built-in function called dir that you can use to view the names of all the functions and variables defined in a module.
+- import math
+  print(dir(math))
 
 # Python Comments
 A comment is a part of the coding file that the programmer does not want to execute, rather the programmer uses it to either explain a block of code or to avoid the execution of a specific part of code while testing.
