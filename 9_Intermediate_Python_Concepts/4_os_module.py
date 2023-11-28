@@ -11,7 +11,7 @@ cwd = os.getcwd()
 print(cwd)
 
 # Open the file in read-only mode
-f = os.open("myfile.txt", os.O_RDONLY)
+f = os.open("4_myfile.txt", os.O_RDONLY)
 
 # Read the contents of the file
 contents = os.read(f, 1024)
