@@ -3,7 +3,7 @@ Operator Overloading is a feature in Python that allows developers to redefine t
 This means that you can use the standard mathematical operators (+, -, *, /, etc.) and comparison operators (>, <, ==, etc.) in your own classes,
 just as you would for built-in data types like int, float, and str.
 
-You can overload an operator in Python by defining special methods in your class. 
+You can overload an operator in Python by defining special methods in your class.
 These methods are identified by their names, which start and end with double underscores (__).
 
 Here are some of the most commonly overloaded operators and their corresponding special methods:
