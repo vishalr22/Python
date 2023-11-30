@@ -10,6 +10,7 @@ def factorial(num):
     else:
         return (num * factorial(num - 1))
 
+
 num = 7
-print("Number: ",num)
-print("Factorial: ",factorial(num))
+print("Number: ", num)
+print("Factorial: ", factorial(num))
