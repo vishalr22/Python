@@ -1,12 +1,12 @@
 '''
-Generators in Python are special type of functions that allow you to create an iterable sequence of values. 
+Generators in Python are special type of functions that allow you to create an iterable sequence of values.
 A generator function returns a generator object, which can be used to generate the values one-by-one as you iterate over it.
 
 Creating a Generator:
-You can create a generator by using the 'yield' statement in a function. 
+You can create a generator by using the 'yield' statement in a function.
 The 'yield' statement returns a value from the generator and suspends the execution of the function until the next value is requested.
 
-next() function is used to request the next value from the generator, 
+next() function is used to request the next value from the generator,
 and the generator resumes its execution until it encounters another yield statement or until it reaches the end of the function.
 
 Using a Generator:
