@@ -21,6 +21,8 @@ thread = threading.Thread(target=my_func)  # Creating a thread
 thread.start()  # It runs the thread
 thread.join()  # It stops the thread
 
+print("!--------------Another Example----------------!")
+
 
 # Creating Multiple Thread
 def thread_task(task):
