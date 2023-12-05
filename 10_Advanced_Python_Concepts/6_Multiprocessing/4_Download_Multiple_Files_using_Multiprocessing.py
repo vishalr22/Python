@@ -1,5 +1,6 @@
 import multiprocessing
 import requests
+import concurrent.futures
 
 
 def downloadFile(url, name):
@@ -19,3 +20,12 @@ if __name__ == "__main__":
 
     for p in pros:
         p.join()
+
+    print("!_________Another Method______________!")
+
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        l1 = [url for i in range(60)]
+        l2 = [i for i in range(60)]
+        results = executor.map(downloadFile, l1, l2)
+        for r in results:
+            print(r)
