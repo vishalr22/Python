@@ -17,15 +17,6 @@ def my_func():
     print("Hello from thread", threading.current_thread().name)
 
 
-if __name__ == '__main__':
-    thread = threading.Thread(target=my_func)  # Creating a thread
-    thread.start()  # It runs the thread
-    thread.join()  # It stops the thread
-
-
-print("!------------------ Another Example ------------------!")
-
-
 # Creating Multiple Thread
 def thread_task(task):
     # Do some work here
@@ -33,8 +24,11 @@ def thread_task(task):
 
 
 if __name__ == '__main__':
-    tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    thread = threading.Thread(target=my_func)  # Creating a thread
+    thread.start()  # It runs the thread
+    thread.join()  # It stops the thread
 
+    tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     threads = []
     for task in tasks:
         thread = threading.Thread(target=thread_task, args=(task,))  # Creating a thread
