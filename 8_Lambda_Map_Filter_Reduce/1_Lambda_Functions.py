@@ -12,8 +12,8 @@ They are commonly used as arguments to higher-order functions, such as map, filt
 def apply(fx, value):
     return 6 + fx(value)
 
-square = lambda x: x * 2
-cube = lambda x: x * x * x
+square = lambda x: x ** 2
+cube = lambda x: x ** 3
 avg = lambda x, y, z: (x + y + z) / 3
 
 print(square(5))
