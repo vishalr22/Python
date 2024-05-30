@@ -18,9 +18,11 @@ Find list of more meta characters here - https://www.ibm.com/docs/en/rational-cl
 
 In Python, regular expressions are supported by the 're' module.
 
-re.search(pattern, text) - Searching for a pattern. re.search() method either returns None (if the pattern does not match),
+re.search(pattern, text) - Searching for a pattern. re.search() method either returns None (if the pattern does not match), 
 or a re.MatchObject that contains information about the matching part of the string.
 This method stops after the first match, so this is best suited for testing a regular expression more than extracting data.
+
+re.match(pattern, text) - used to check for a match only at the beginning of the string. If it finds a match, it returns a match object; otherwise, it returns 'None'.
 
 re.findall(pattern, text) - used to find all occurrences of the pattern in a string and return in a list.
 
@@ -29,7 +31,7 @@ re.sub(pattern, substitute_text, text) - used to replace a pattern in a string.
 re.finditer() - works exactly the same as the re.findall() method except it returns an iterator yielding match objects matching the regex pattern
 in a string instead of a list.
 
-re.split() - split the expression/text wherever the given pattern is found and return into a list of elements
+re.split(pattern, text) - split the expression/text wherever the given pattern is found and return into a list of elements
 '''
 
 import re
@@ -37,21 +39,33 @@ import re
 pattern = r"[a-z]+at"  # Define a regular expression pattern
 text = "The cat is in the hat."  # Match the pattern against a string
 
-match = re.search(pattern, text)
-if match:
-    print("Match found!")
+# re.search()
+search = re.search(pattern, text)
+if search:
+    print("Search found:", search.group())
 else:
-    print("Match not found.")
+    print("Search not found.")
 
+# re.match()
+match = re.match(pattern, text)
+if match:
+    print("Match found:", match.group())
+else:
+    print("No match")
+
+# re.findall()
 matches = re.findall(pattern, text)
 print(matches)
 
+# re.sub()
 new_text = re.sub(pattern, "dog", text)
 print(new_text)
+
 
 text = "apple,banana,orange,grape"
 pattern = r","
 
+# re.split()
 split_result = re.split(pattern, text)
 print("Split result:", split_result)
 
@@ -61,10 +75,10 @@ print("!--------------Another Example----------------!")
 text = "The email address is example@example.com."
 pattern = r"\w+@\w+\.\w+"
 
-match = re.search(pattern, text)
-print(match)
-if match:
-    email = match.group()
+search = re.search(pattern, text)
+print(search)
+if search:
+    email = search.group()
     print(email)
 
 print("!--------------Another Example----------------!")
@@ -76,6 +90,7 @@ and was named the next day after attaining tropical storm status. Dumazile reach
 of 165 km/h (105 mph), 1-minute sustained winds of 205 km/h (125 mph), and a central atmospheric pressure of 945 hPa (27.91 inHg). As it tracked |
 southeastwards, Dumazile weakened steadily over the next couple of days due to wind shear, and became a post-tropical cyclone on 7 March'''
 
+# re.finditer()
 matches = re.finditer(pattern, text)
 for match in matches:
     print(match.span())
