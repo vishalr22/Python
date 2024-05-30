@@ -28,6 +28,8 @@ re.sub(pattern, substitute_text, text) - used to replace a pattern in a string.
 
 re.finditer() - works exactly the same as the re.findall() method except it returns an iterator yielding match objects matching the regex pattern
 in a string instead of a list.
+
+re.split() - split the expression/text wherever the given pattern is found and return into a list of elements
 '''
 
 import re
@@ -47,6 +49,11 @@ print(matches)
 new_text = re.sub(pattern, "dog", text)
 print(new_text)
 
+text = "apple,banana,orange,grape"
+pattern = r","
+
+split_result = re.split(pattern, text)
+print("Split result:", split_result)
 
 print("!--------------Another Example----------------!")
 
