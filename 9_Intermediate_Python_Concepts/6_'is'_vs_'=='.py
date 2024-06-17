@@ -17,6 +17,9 @@ b = None
 print(a is b)  # True
 print(a == b)  # True
 
+a = [1, 2, 3]
+b = a
+print(a is b)  # True (because they reference the same object)
 
 '''
 Strings and integers are immutable, which means that once they are created, their value cannot be changed.
